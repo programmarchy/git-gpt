@@ -3,6 +3,8 @@ git-gpt
 
 Generate commit messages using OpenAI GPT-3.
 
+https://user-images.githubusercontent.com/622192/213011125-e455978e-43a9-46d1-aa61-3385e078c516.mp4
+
 Configuration
 -------------
 
