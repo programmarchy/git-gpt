@@ -1,2 +1,17 @@
+# macOS
+.DS_Store
+
+# development
 .venv
-__pycache__
+
+# build artifacts
+/build/
+*.egg-info/
+/dist/
+/git_gpt.egg-info/
+.pypirc
+
+# runtime artifacts
+__pycache__/
+*.pyc
+*.pyo
