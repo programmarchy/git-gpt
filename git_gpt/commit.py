@@ -1,6 +1,9 @@
+import os
 import subprocess
 import sys
 import openai
+
+default_commit_prompt = "Write a detailed git commit message for the following diff. Explain the changes to the code if possible. Don't include the actual command or any prefixes to the message."
 
 def commit(options):
   output = subprocess.check_output(["git", "diff", "--staged"])
@@ -8,7 +11,7 @@ def commit(options):
   if not diff:
     raise Exception("no changes added to commit")
 
-  prompt = "Write a detailed git commit message for the following diff. Explain the changes to the code if possible. Don't include the actual command or any prefixes to the message."
+  prompt = os.getenv('GITGPT_COMMIT_PROMPT', default_commit_prompt)
   prompt = prompt + '\n\n' + diff
 
   res = openai.Completion.create(
