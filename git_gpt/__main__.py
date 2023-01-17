@@ -1,6 +1,6 @@
 import sys
 import argparse
-from git_gpt import commit
+from git_gpt import commit, status
 
 def main():
   args = sys.argv[1:]
@@ -12,6 +12,8 @@ def main():
   try:
     if command == 'commit':
       commit(options)
+    elif command == 'status':
+      status(options)
     else:
       raise Exception(f"unrecognized command: '{command}'")
   except Exception as e:
