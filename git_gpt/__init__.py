@@ -9,6 +9,6 @@ git_gpt:
 
 __author__ = 'Donald Ness'
 __date__ = '2023-01-17'
-__version__ = '0.1'
+__version__ = '0.1.0'
 
 from .commit import commit
