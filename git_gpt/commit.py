@@ -8,7 +8,7 @@ def commit(options):
   if not diff:
     raise Exception("no changes added to commit")
 
-  prompt = 'Write a git commit message for the following diff.'
+  prompt = "Write a detailed git commit message for the following diff. Explain the changes to the code if possible. Don't include the actual command or any prefixes to the message."
   prompt = prompt + '\n\n' + diff
 
   res = openai.Completion.create(
