@@ -1,5 +1,3 @@
-|License: MIT| |PyPI3| |PyPI2|
-
 git-gpt
 =======
 
@@ -8,9 +6,9 @@ Generate commit messages using OpenAI GPT-3.
 Configuration
 -------------
 
-Generate your OpenAI secret API key and set it to an environment variable named `OPENAI_API_KEY`.
+Generate your OpenAI secret API key and set it to an environment variable named ``OPENAI_API_KEY``.
 
-For more information, read [Where do I find my Secret API Key?](https://help.openai.com/en/articles/4936850-where-do-i-find-my-secret-api-key)
+For more information, read `Where do I find my Secret API Key? <https://help.openai.com/en/articles/4936850-where-do-i-find-my-secret-api-key>`_
 
 Installation
 ------------
